@@ -30,8 +30,7 @@ function App() {
   return (
     <div className="App">
       <div>{fileList.length} <input ref={fileInput} type="file" onChange={folderChange} multiple="" directory="" webkitdirectory=""></input></div>
-     
-      {/* {fileList.map(img => <img src={img} alt="img"/>)} */}
+      {fileList.map(img => <img src={img} alt="img"/>)}
     </div>
   );
 }
