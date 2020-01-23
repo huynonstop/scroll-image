@@ -21,7 +21,7 @@ function App() {
       }
       return apath.localeCompare(bpath)
     }))
-    for (const i of e.target.files) {
+    for (const i of inputFileList) {
       const image =  URL.createObjectURL(i)
       newFileList.push(image)
     }
